@@ -1,0 +1,23 @@
+div#quiz{
+    width: 600px;
+    height: 400px;
+    background: gold;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 20%;
+
+
+}
+div#question{
+    height: 200px;
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 200px;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: white;
+}
