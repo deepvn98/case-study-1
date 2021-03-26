@@ -11,6 +11,10 @@ div#quiz{
 div#question{
     height: 200px;
 }
+button.button{
+    margin-top: 20px;
+}
+
 .button {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -18,6 +22,6 @@ div#question{
 }
 
 .button:hover {
-    background-color: crimson;
-    color: white;
+    background-color: darkgreen;
+    color: cornsilk;
 }
