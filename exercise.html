@@ -7,18 +7,22 @@
 </head>
 <body>
 <div id="quiz">
-    <h1 id="report"></h1>
+    <br>
     <div id="question"></div>
+    <div id="picter"><img src="" alt="" id="img"></div>
     <button class = "button" id = "ans1" onclick = "chooseAns( this.id )">Đáp án 1</button>
     <button class = "button" id = "ans2" onclick = "chooseAns( this.id )">áp án 2</button>
     <button class = "button" id = "ans3" onclick = "chooseAns( this.id )">Đáp án 3</button>
     <button class = "button" id = "ans4" onclick = "chooseAns( this.id )">Đáp án 4</button>
+    <p id="point"></p>
     <br>
     <h2 id="result"></h2>
 </div>
 <br>
-<button style="margin-left:20%" id="next" onclick="nextQuiz()">next</button>
-<button id="" onclick=" checkAnswer()">reset</button>
+<button style="margin-left:30%" id="next" onclick="nextQuiz()">next</button>
+<button id="" onclick="">reset</button>
+<br>
+<div style="margin-left: 30%" id="explain" > </div>
 
 
 </body>
@@ -26,6 +30,6 @@
 <script src="gameManager.js"></script>
 <script src="display.js"></script>
 <script src="nextQuiz.js"></script>
-<script src="choose-ans.js"></script>
-
+<script src="chooseAns.js"></script>
+<script src="endGame.js"></script>
 </html>

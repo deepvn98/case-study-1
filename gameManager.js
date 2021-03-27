@@ -7,13 +7,14 @@ class GameManager {
     }
 
     checkAnswer(ans){
-        if ( ans === this.quizs[this.existing] . correct){
+        if ( ans == this.quizs[this.existing].correct){
             return true;
         }else {
             return false;
         }
 
     }
+    //
     nextQuiz(){
         if ( object.existing < object.limit - 1 ){
             this.existing++;
@@ -22,35 +23,48 @@ class GameManager {
             this.existing = 0;
         }
     }
-    chooseAnswer(ans){
-         if (this.checkAnswer(ans)){
-             alert("đúng")
-             // document.getElementById("result").innerHTML = "Câu trả lời của bạ là đúng!"
-         }else {
-             alert("sai")
-             // document.getElementById("result").innerHTML = "Câu trả lời của bạ là sai!"
-
-         }
+    //
+    endGame(){
+            alert(" Bạn đã trả lời sai!")
+        this.resetGame()
     }
+    //
     resetGame(){
+        this.existing = 0;
 
     }
+    //
     addQuiz(quiz){
         this.quizs.push(quiz);
     }
     deleteQuiz(index){
-        this.quizs.splice(index, 1)
+        // this.quizs.splice(index, 1)
 
     }
 }
 
 
-let object = new GameManager(4);
+let object = new GameManager(19);
     object.addQuiz(quiz1);
     object.addQuiz(quiz2);
     object.addQuiz(quiz3);
     object.addQuiz(quiz4);
-    console.log(object)
+    object.addQuiz(quiz5);
+    object.addQuiz(quiz6);
+    object.addQuiz(quiz7);
+    object.addQuiz(quiz8);
+    object.addQuiz(quiz9);
+    object.addQuiz(quiz10);
+    object.addQuiz(quiz11);
+    object.addQuiz(quiz12);
+    object.addQuiz(quiz13);
+    object.addQuiz(quiz14);
+    object.addQuiz(quiz15);
+    object.addQuiz(quiz16);
+    object.addQuiz(quiz17);
+    object.addQuiz(quiz18);
+    object.addQuiz(quiz19);
+console.log(object)
 
 
 
